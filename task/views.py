@@ -10,3 +10,5 @@ def task(request):
         "tasks": tasks
     })
 
+def add(request):
+    return render(request, "task/add.html")
