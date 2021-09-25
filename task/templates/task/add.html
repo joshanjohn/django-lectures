@@ -3,7 +3,8 @@
 {% block  body %}
 <h1>Add Task</h1>
 <form action="{% url 'tasks:add' %}" method="POST">
-    <input type="text" name="text" placeholder="task name" id="">
+    {% csrf_token %}
+    {{form}}
     <input type="submit">
 </form>
 <button><a href="{% url 'tasks:index' %}">View Tasks</a></button> 
