@@ -2,11 +2,11 @@
 
 {% block body %}
     <h1>Tasks</h1>
-    <button style="background-color: aquamarine;color: black; border: none;" ><a style="text-decoration: none;" href="{% url 'tasks:add' %}">New Task</a></button>
+    <button style="background-color: aquamarine;color: black; border: none; width: 200px; height: 40px;font-size: 15px;" ><a style="text-decoration: none;" href="{% url 'tasks:add' %}">New Task</a></button>
 
     <ul>
         {% for task in tasks %}
-        <li>{{ task }}</li>
+        <li style="font-size: 20px;font-family: sans-serif;">{{ task }}</li>
         {% endfor %}
     </ul>
 
